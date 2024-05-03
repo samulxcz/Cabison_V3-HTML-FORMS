@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SAMMYMOTORPARTS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 class="title">SAMMY<span>WORKZ</span></h1>
+            <p>Motor Shop</p>
+            <ul class="menu">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="#" id="about">ABOUT</a></li>
+                <li><a href="#" id="products">PRODUCTS</a></li>
+                <li><a href="#" id="yamaha">YAMAHA</a></li>
+                <li><a href="#" id="honda">HONDA</a></li>
+                <li><a href="#" id="contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="home">
+            <h1 class="title-1">Where <span>Adventures</span> Begin, <br>Smiles Never End</h1>
+            <p>we have the best motor parts for you</p>
+            <button type="button" id="shop-now">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="about-content" style="display: none;">
+            <h1 class="title-2">ABOUT US</h1>
+            <p>We at SammyMotors of a better world where people, technology, and the environment live as one. That is why our products and processes are designed to put safe, efficient, economical, and environment-friendly technology at the service of people and the community. We push ahead with our efforts to provide our customers with life-building technology.</p>
+
+            <h2 class="title-3">The Joy and Freedom of Mobility</h2>
+            <p>Prestige, reliability, safety, and quality of engine performance are the top traits that SammyWorkz is widely recognized for. We aims to provide people the joy and freedom of mobility.SammyMotorWorks has been in the Philippines for 20 years and counting.Dominate our markets through dynamic selling and timely delivery of attractive products, with excellent customer service and continuous product improvement and sustain Team Members’ morale and productivity by developing their full potential and total well-being, and by establishing mutual trust, mutual responsibility and harmony through open communication</p>
+        </div>
+
+        <div id="products-content" style="display: none;">
+            <h1 class="title-4">PRODUCTS</h1>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get references to menu items and the "Shop Now" button
+            const homeLink = document.getElementById("home");
+            const aboutLink = document.getElementById("about");
+            const productsLink = document.getElementById("products");
+            const yamahaLink = document.getElementById("yamaha");
+            const hondaLink = document.getElementById("honda");
+            const contactLink = document.getElementById("contact");
+            const shopNowButton = document.getElementById("shop-now");
+
+            // Add click event listeners to handle clicks
+            homeLink.addEventListener("click", function(event) {
+                // Prevent default behavior of link
+                event.preventDefault();
+                // Reload the current page (home page)
+                window.location.reload();
+            });
+
+            aboutLink.addEventListener("click", function() {
+                // Show the about content
+                document.getElementById("about-content").style.display = "block";
+            });
+
+            productsLink.addEventListener("click", function() {
+                // Show the about content
+                document.getElementById("products-content").style.display = "block";
+            });
+
+            yamahaLink.addEventListener("click", function() {
+                // Redirect to YAMAHA page
+                window.location.href = "yamaha.html";
+            });
+
+            hondaLink.addEventListener("click", function() {
+                // Redirect to HONDA page
+                window.location.href = "honda.html";
+            });
+
+            contactLink.addEventListener("click", function() {
+                // Redirect to CONTACT page
+                window.location.href = "contact.html";
+            });
+
+            shopNowButton.addEventListener("click", function() {
+                // Handle click for Shop Now button
+                console.log("Shop Now button clicked");
+                // You can add code to handle the Shop Now button click here
+            });
+        });
+    </script>
+</body>
+</html>

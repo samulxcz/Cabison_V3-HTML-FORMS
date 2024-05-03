@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(bgimage.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+.nav-bar .title{
+    color: #fff;
+    font-size: 67px;
+    font-weight: 600;
+    
+}
+span{
+    color: crimson;
+}
+.nav-bar p{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .4s ease;
+}
+.menu li a:hover{
+    color: crimson;
+    padding: 8px 30px;
+    border: 2px solid #fff;
+}
+.home{
+    height: 400px;
+    padding: 70px;
+}
+.title-1{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+}
+.home p{
+    color: lemonchiffon;
+    font-size: 20px;
+    padding-top: 10;
+}
+.home button{
+    height: 40px;
+    color: #ffffff;
+    background: crimson;
+    font-size: 22px;
+    padding: 5px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.home button:hover{
+    background: none;
+    border: 2px solid crimson;
+}
+
+.content{
+    background-image: url(black.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.title-2{
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.content p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 10;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-3{
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.content p2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 10;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.products-content .title-4{
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.content .products-content{
+    background-image: url(images/pulley.jpg);
+    background-image: url(images/rs8oil.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 1px;
+    height: 1px;
+}
